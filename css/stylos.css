@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    height: 70px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+main{
+    align-content: center;
+}
+
+.contenedor_logo{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+
+.contenedor_logo .img-logo{
+    display: inline;
+    justify-content: center;
+    width: 12%;
+}
+
+.contenedor_logo .img-logo img{
+    height: 100%;
+}
+
+.ul-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.ul-nav li a{
+    text-decoration: none;
+    color: rgb(52, 51, 51);
+}
+
+.ul-nav li a:hover{
+    text-decoration: none;
+    color: rgb(255, 69, 2);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .contenedor__1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenedor .contenedor__1 .img{
+    width: 100%
+}
+
+.contenedor .contenedor__1 .banner{
+    width: 40%;
+    height: auto;
+}
+
+.contenedor .contenedor__2{
+    font-family: kanit;
+    width: 40%;
+    padding: 175px 0px;
+}
+
+.contenedor .contenedor__2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    width: 30%;
+}
+
+.contenedor .contenedor__2 ul li{
+    margin-left: 20px;
+    font-style: italic;
+}
+
+
+.contenedor .contenedor__2 button{
+    font-size: 25px;
+    background-color: rgb(250, 84, 23);
+    width: 40%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.contenedor .contenedor__2 .titulo{
+    font-size: 35px;
+}
+
+#botones__redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+#botones__redes i{
+    color: rgb(250, 84, 23);
+    cursor: pointer;
+}
+
+
+
+.footer{
+    margin-bottom: 0px;
+    background-color: rgb(37, 37, 37);
+    padding: 20px 0px;
+}
+
+.footer .derechos{  
+    font-family: kanit;
+    font-size: 20px;
+    color: rgb(250, 84, 23);
+    text-align: center;
+}
+
+/* Estilos - sobre mí */
+
+
+.contenedor-sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 125px 0px;
+}
+
+.contenedor-sobre .contenedor__text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-sobre .contenedor__text .textos{
+    font-family: kanit;
+    width: 80%;
+    align-items: center;
+
+}
+
+.contenedor-sobre .contenedor__text .textos .lista{
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.contenedor-sobre .contenedor__banner{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-sobre .contenedor__banner .banner{
+    width: 50%;
+}
+
+
+/* Estilos - skills - puse listasta porque no sabía como poner barras de progreso */
+
+.contenedor-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 259px 0px;
+}
+
+.contenedor-skills .skills{
+    width: 80%;
+    font-family: kanit;
+}
+
+#lista-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lista-skills div{
+    width: 30%;
+    padding-bottom: 40px;
+}
+
+/* Estilos - portafolio */
+
+.contenedor-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 70px 0px;
+}
+
+.contenedor-galeria .galeria{
+    width: 80%;
+    font-family: kanit;
+    font-size: 25px;
+}
+
+#fotos img{
+    width: 30%;
+}
+
+/* Estilos - formulario */
+
+.contenedor-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 210px 0px;
+    font-family: kanit;
+
+}
+
+.contenedor-form .text__form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 90px ;
+
+}
+
+.contenedor-form .text__form .form__texto{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#formulario{
+    width: 50%;
+}
+
+#formulario .button__enviar{
+    font-size: 25px;
+    color: aliceblue;
+    background-color: rgb(250, 84, 23);
+    width: 40%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+}
