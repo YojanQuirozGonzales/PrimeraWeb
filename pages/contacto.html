@@ -1,90 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qg|fox</title>
-    <link rel="stylesheet" href="../css/stylos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-</head>
-<body>
-    <header>
-        <div class="contenedor_logo">
-            <a href="../index.html" class="img-logo"><img src="../assets/img/logo.png" alt="logo"></a>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortaFox | Contacto</title>
+    <!--BOOTSTRAP LINK-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!--LINK TIPOGRAFÍA ROBOTO /REGULAR / BOLD-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK ICONOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/stylos.css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header class="nav">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../assets/img/logo.png" alt="logo"
+          /></a>
         </div>
-        <nav> 
-            <ul class="ul-nav">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/sobremi.html">SOBRE MÍ</a></li>
-                <li><a href="../pages/skills.html">SKILLS</a></li>
-                <li><a href="../pages/portafolio.html">PORTAFOLIO</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                <li><a href="">CV</a></li>
-            </ul>
+        <nav>
+          <ul class="navegador">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./sobremi.html">SOBRE MÍ</a></li>
+            <li><a href="./skills.html">SKILLS</a></li>
+            <li><a href="./portafolio.html">PORTAFOLIO</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+            <li><a href="">CV</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-    <section class="contenedor-form">
-        <div class="text__form">
-            <h1>CONTACTO</h1>
-            <p class="form__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cupiditate incidunt temporibus quisquam non reiciendis facere repellat distinctio harum? Eum perspiciatis omnis iusto quidem eos quasi vel eaque dolor tempore.</p>
+      </header>
+      <main class="contenido">
+          <div class="text__form">
+            <h1 class="titulo">CONTACTO</h1>
+            <p class="form__texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              cupiditate incidunt temporibus quisquam non reiciendis facere
+              repellat distinctio harum? Eum perspiciatis omnis iusto quidem eos
+              quasi vel eaque dolor tempore.
+            </p>
+          
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Estado</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Argentina</option>
+                <option>México</option>
+                <option>Perú</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto los terminos y condiciones.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">ENVIAR</button>
+            </div>
+          </form>
+          </div>
+          
+        </section>
+      </main>
+      <aside class="botones-redes">
+        <div class="iconos">
+          <a href="https://www.behance.net/"
+            ><i class="fa-brands fa-square-behance fa-3x"></i
+          ></a>
+          <a href="https://www.linkedin.com/"
+            ><i class="fa-brands fa-linkedin fa-3x"></i
+          ></a>
+          <a href="https://github.com/"
+            ><i class="fa-brands fa-square-github fa-3x"></i
+          ></a>
         </div>
-        <div id="formulario">
-                <form>
-                    <div>
-                    <label for="">Nombre:</label>
-                    </div>
-
-                    <div>
-                    <label for="text"></label>
-                    <input type="text" placeholder="Nombre">
-                    </div>
-
-                    <div>
-                    <label for="">Apellido:</label>
-                    </div>
-
-                    <div>
-                    <label for="text"></label>
-                    <input type="text" placeholder="Apellido">
-                    </div>
-                    
-
-                    <div>
-                        <label for="">Correo:</label>
-                        </div>
-                    <div>
-                        <label for="gmail"></label>
-                        <input type="gmail" placeholder="Correo">
-                    </div>
-
-                    <div>
-                        <label for="">Mensaje:</label>
-                        </div>
-                    <div>
-                        <label for="text"></label>
-                        <textarea name="text" id="Mensaje" cols="30" rows="10">Mensaje</textarea>
-                    </div>
-                    <div>
-                    <input class="button__enviar" type="submit" name="Enviar">
-                    </div>
-                </form>
-        </div>
-        <div id="botones__redes">
-            <a href="https://www.behance.net/"><i class="fa-brands fa-square-behance fa-3x"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-3x"></i></a>  
-            <a href="https://github.com/"><i class="fa-brands fa-square-github fa-3x"></i></a> 
-        </div>    
-    </section>
-    </main>
-    <footer class="footer">
-    <p class="derechos">&copy; Derechos reservados</p>
-    </footer>
-</body>
-
+      </aside>
+      <footer>
+        <p>&copy; Derechos reservados</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
