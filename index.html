@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PortaFox</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>PortaFox | Inicio</title>
+  <!--BOOTSTRAP LINK-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <!--LINK TIPOGRAFÍA ROBOTO /REGULAR / BOLD-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,51 +20,91 @@
   <link rel="stylesheet" href="./css/stylos.css" />
 </head>
 
+
 <body>
   <div class="contenedor">
-    <header class="nav">
-      <div class="logo">
-        <a href="./index.html"><img src="./assets/img/logo.png" alt="logo" /></a>
+    <div class="nav">
+      <div class="nav_hambur">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./assets/img/logo.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  Dark offcanvas
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sobremi.html">Sobre Mí</a>
+                    <a class="nav-link" href="./pages/skills.html">Skills</a>
+                    <a class="nav-link" href="./pages/portafolio.html">Portafolio</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-      <nav>
-        <ul class="navegador">
-          <li><a href="./index.html">INICIO</a></li>
-          <li><a href="./pages/sobremi.html">SOBRE MÍ</a></li>
-          <li><a href="./pages/skills.html">SKILLS</a></li>
-          <li><a href="./pages/portafolio.html">PORTAFOLIO</a></li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-          <li><a href="">CV</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header class="nav_pc">
+        <div class="logo">
+          <a href="./index.html"><img src="./assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <div>
+          <ul class="navegador">
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./pages/sobremi.html">SOBRE MÍ</a></li>
+            <li><a href="./pages/skills.html">SKILLS</a></li>
+            <li><a href="./pages/portafolio.html">PORTAFOLIO</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+            <li><a href="">CV</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
     <main class="contenido">
-      <div class="contenido_img">
-        <img src="./assets/img/banner.jpg" alt="banner" />
-      </div>
-      <div class="texto_contenido">
-        <h1 class="titulo">BIENVENIDO</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo
-          vitae, pariatur dicta, sunt et nihil earum velit incidunt illum
-          neque beatae! Excepturi nostrum perferendis beatae error
-          repudiandae. Doloremque cum veritatis nihil voluptas laborum sunt,
-          explicabo voluptatem minima eveniet? Fugiat laborum accusamus atque
-          nemo veritatis, iusto illo consequatur quos, explicabo voluptatem
-          eaque cum, eius quidem laboriosam cupiditate nesciunt saepe
-          repudiandae assumenda similique! Accusamus minus sapiente,
-          reprehenderit error optio perspiciatis. At, est. Voluptates magnam
-          voluptas laboriosam expedita laborum eveniet repellendus, veritatis
-          voluptatum corrupti reiciendis quis in deserunt ea aliquid harum
-          dolore alias dignissimos commodi earum adipisci. Rerum maiores
-          pariatur reiciendis labore.
-        </p>
-        <ul>
-          <li>Lorem, ipsum dolor sit amet</li>
-          <li>Lorem, ipsum dolor sit amet consectetur.</li>
-          <li>Lorem, ipsum dolor amet consectetur</li>
-          <li>Lorem, ipsum dolor sit</li>
-        </ul>
-        <button>DESCARGAR CV</button>
+      <div class="contenido_inicio">
+        <div class="contenido_img">
+          <img src="./assets/img/banner.jpg" alt="banner" />
+        </div>
+        <div class="texto_contenido">
+          <h1 class="titulo">BIENVENIDO</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            nemo vitae, pariatur dicta, sunt et nihil earum velit incidunt
+            illum neque beatae! Excepturi nostrum perferendis beatae error
+            repudiandae. Doloremque cum veritatis nihil voluptas laborum sunt,
+            explicabo voluptatem minima eveniet? Fugiat laborum accusamus
+            atque nemo veritatis, iusto illo consequatur quos, explicabo
+            voluptatem eaque cum, eius quidem laboriosam cupiditate nesciunt
+            saepe repudiandae assumenda similique! Accusamus minus sapiente,
+            reprehenderit error optio perspiciatis. At, est. Voluptates magnam
+            voluptas laboriosam expedita laborum eveniet repellendus,
+            veritatis voluptatum corrupti reiciendis quis in deserunt ea
+            aliquid harum dolore alias dignissimos commodi earum adipisci.
+            Rerum maiores pariatur reiciendis labore.
+          </p>
+          <ul>
+            <li>Lorem, ipsum dolor sit amet</li>
+            <li>Lorem, ipsum dolor sit amet consectetur.</li>
+            <li>Lorem, ipsum dolor amet consectetur</li>
+            <li>Lorem, ipsum dolor sit</li>
+          </ul>
+          <button>DESCARGAR CV</button>
+        </div>
       </div>
     </main>
     <aside class="botones-redes">
@@ -77,6 +118,9 @@
       <p>&copy; Derechos reservados</p>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
