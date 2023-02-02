@@ -17,18 +17,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/stylos.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 
 <body>
   <div class="contenedor">
-    <div class="nav">
-      <div class="nav_hambur">
+    <header class="nav">
+      <div class="mobile">
         <nav class="navbar navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
-              <img src="./assets/img/logo.png" alt="" /></a>
+              <img src="./assets/img/logo.png" alt="log-fox" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
               <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
               aria-labelledby="offcanvasDarkNavbarLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Dark offcanvas
+                  PortaFox
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                   aria-label="Close"></button>
@@ -59,22 +59,34 @@
           </div>
         </nav>
       </div>
-      <header class="nav_pc">
-        <div class="logo">
-          <a href="./index.html"><img src="./assets/img/logo.png" alt="logo" /></a>
-        </div>
+      <div class="pc">
         <div>
           <ul class="navegador">
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./pages/sobremi.html">SOBRE MÍ</a></li>
-            <li><a href="./pages/skills.html">SKILLS</a></li>
-            <li><a href="./pages/portafolio.html">PORTAFOLIO</a></li>
-            <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            <li><a href="">CV</a></li>
+            <div class="logo">
+              <a href="./index.html"><img src="./assets/img/logo.png" alt="logo" /></a>
+            </div>
+            <div class="direcciones">
+              <div class="links">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./pages/sobremi.html">SOBRE MÍ</a></li>
+                <li><a href="./pages/skills.html">SKILLS</a></li>
+                <li><a href="./pages/portafolio.html">PORTAFOLIO</a></li>
+                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+              </div>
+              <button hreft="#">DESCARGAR CV</button>
+            </div>
+            <div class="botones-redes">
+              <div class="iconos">
+                <a href="https://www.behance.net/"><i class="fa-brands fa-square-behance fa-2x"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-square-github fa-2x"></i></a>
+              </div>
+            </div>
           </ul>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
+
     <main class="contenido">
       <div class="contenido_inicio">
         <div class="contenido_img">
@@ -91,11 +103,7 @@
             atque nemo veritatis, iusto illo consequatur quos, explicabo
             voluptatem eaque cum, eius quidem laboriosam cupiditate nesciunt
             saepe repudiandae assumenda similique! Accusamus minus sapiente,
-            reprehenderit error optio perspiciatis. At, est. Voluptates magnam
-            voluptas laboriosam expedita laborum eveniet repellendus,
-            veritatis voluptatum corrupti reiciendis quis in deserunt ea
-            aliquid harum dolore alias dignissimos commodi earum adipisci.
-            Rerum maiores pariatur reiciendis labore.
+            reprehenderit error optio perspiciatis. At, est.
           </p>
           <ul>
             <li>Lorem, ipsum dolor sit amet</li>
@@ -107,13 +115,6 @@
         </div>
       </div>
     </main>
-    <aside class="botones-redes">
-      <div class="iconos">
-        <a href="https://www.behance.net/"><i class="fa-brands fa-square-behance fa-3x"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
-        <a href="https://github.com/"><i class="fa-brands fa-square-github fa-3x"></i></a>
-      </div>
-    </aside>
     <footer>
       <p>&copy; Derechos reservados</p>
     </footer>

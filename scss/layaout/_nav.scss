@@ -1,0 +1,98 @@
+.nav{
+    grid-area: nav;
+    font-weight: 900;
+    align-items: center;
+
+    .mobile{
+        img{
+            width: 3rem;
+        }
+        @include desktop{
+            display: none;
+        }
+    }
+    & .pc {
+        @include mobile{
+            display:none;
+        }
+        @include tablet{
+            display: none;
+        }
+        width: 100%;
+        height:100vh;
+        border-right: solid;
+        border-right-width: 1px;
+        border-right-color: $primary;
+        
+        .navegador{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start ;
+            padding: 0.2rem;
+
+            .logo{
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+
+                & img{
+                    width: 3rem;
+                }
+            }
+
+            .direcciones{
+                .links{
+                    a{
+                        color: $primary;
+                        text-decoration: none;
+                        font-size: 0.8rem;
+                        &:hover{
+                            color: $secundary;
+                        }
+                    }
+                }
+
+                button{
+                    font-size: 0.6rem;
+                    border-radius: 10%;
+                    color: $primary;
+                    background-color: white;
+                    border-color: white;
+                    padding: 0.1rem;
+                        &:hover{
+                        background-color: $primary;
+                        color: white;
+                        border-radius: 10%;
+                        border-color: none;
+                        }
+                }
+                    
+                }           
+            .botones-redes {
+                height: 20%;
+                display: flex;
+                flex-direction: row;
+                color: $secundary;
+
+                .iconos {
+                    
+                    a{
+                        color:$secundary;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0.5rem;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                        }
+                    }
+                
+            }
+        }
+    }   
+}

@@ -1,0 +1,30 @@
+.contenedor {
+    display: grid;
+    @include desktop{
+        grid-template-areas:
+        "nav contenido "
+        "nav footer";  
+        grid-template-rows: 9fr 1fr;
+        grid-template-columns: 1fr 9fr;
+        background-color: $bgc;
+        font-family: Roboto;
+        color: $secundary;
+    }
+    @include tablet{
+        grid-template-areas:
+        "nav"
+        "contenido"
+        "footer";
+        grid-template-rows: 1fr 5fr 0.5fr;
+    }
+
+    @include mobile{
+        grid-template-areas:
+        "nav"
+        "contenido"
+        "footer";
+        grid-template-rows: 1fr 5fr 0.5fr;
+    }
+
+
+}
