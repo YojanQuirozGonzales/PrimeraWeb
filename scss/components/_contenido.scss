@@ -80,7 +80,9 @@
                     font-size: 0.8rem;
                     padding-left: 0.5rem;
                 }
-    
+            }
+            .sobremi_img{
+                width: 100%;
             }
         }
     
@@ -233,9 +235,9 @@
                         padding-left: 0.5rem;
                     }
                 }
+            }
             .sobremi_img{
                 width: 100%;
-            }
             }   
         }
     
@@ -312,8 +314,9 @@
 @include mobile{
     .contenido{
         grid-area: contenido;
-        padding: 1rem;
+        padding: 0rem;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-family: Roboto;
@@ -370,11 +373,11 @@
         }
     
         .contenido_sobremi{
-            width: 100%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0.5rem;
+            padding: 0rem;
 
             .contenedor__text{
                 padding: 0.5rem;
@@ -394,11 +397,16 @@
                     }
                 }
             }
+            .sobremi_img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
         }
     
         .contenido_skills{
-            width: 100%;
-            height: 100%;
+            width: 60%;
             display: flex;
             flex-direction: column;
             align-items: center;
