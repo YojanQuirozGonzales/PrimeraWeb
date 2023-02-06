@@ -76,7 +76,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0.2rem;
+  padding: 0.5rem;
 }
 .nav .pc .navegador .logo {
   display: flex;
@@ -309,21 +309,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .contenido .contenido_sobremi .texto_sobremi {
     padding: 0.5rem;
   }
-  .contenido .contenido_sobremi .texto_sobremi h2 {
+  .contenido .contenido_sobremi .contenedor__text {
+    padding: 0rem;
+  }
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi {
+    padding: 0.5rem;
+  }
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi h2 {
     color: #ff626d;
     font-weight: 900;
     font-size: 2rem;
   }
-  .contenido .contenido_sobremi .texto_sobremi p {
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi p {
     font-size: 1rem;
   }
-  .contenido .contenido_sobremi .texto_sobremi ol {
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi ol {
     font-size: 0.8rem;
     padding-left: 0.5rem;
+  }
+  .contenido .contenido_sobremi .contenedor__text .sobremi_img {
+    width: 100%;
   }
   .contenido .contenido_skills {
     width: 100%;
@@ -437,19 +444,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .contenido .contenido_sobremi .texto_sobremi {
     padding: 0.5rem;
   }
-  .contenido .contenido_sobremi .texto_sobremi h2 {
+  .contenido .contenido_sobremi .contenedor__text {
+    padding: 0.5rem;
+  }
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi {
+    padding: 0rem;
+  }
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi h2 {
     color: #ff626d;
     font-weight: 900;
     font-size: 2rem;
   }
-  .contenido .contenido_sobremi .texto_sobremi p {
-    font-size: 1rem;
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi p {
+    font-size: 0.8rem;
   }
-  .contenido .contenido_sobremi .texto_sobremi ol {
+  .contenido .contenido_sobremi .contenedor__text .texto_sobremi ol {
     font-size: 0.8rem;
     padding-left: 0.5rem;
   }
