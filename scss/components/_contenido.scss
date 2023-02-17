@@ -15,9 +15,11 @@
             justify-items: center;
     
             .contenido_img{
+                display: flex;
+                justify-content: flex-end;
                 width: 60%;
                 img{
-                    width: 100%;
+                    width: 60%;
                 }
             }
             .texto_contenido{
@@ -66,6 +68,7 @@
             align-items: center;
             .texto_sobremi{
                 padding: 0.5rem;
+                padding-left: 30%;
                 h2{
                     color: $primary;
                     font-weight: 900;   
@@ -74,7 +77,7 @@
     
                 p{
                     font-size: 0.8rem;
-                    width: 90%;
+                    width: 60%;
                 }
                 ol {
                     font-size: 0.8rem;
@@ -83,6 +86,10 @@
             }
             .sobremi_img{
                 width: 100%;
+
+                img{
+                    width: 60%;
+                }
             }
         }
     
@@ -118,6 +125,12 @@
     
         .contenido_carrusel{
             width: 70%;
+            display: flex;
+            gap: 2rem;
+
+            .card{
+                background-color: #232227;
+            }
         }
     
     
@@ -168,13 +181,16 @@
     
             .contenido_img{
                 width: 100%;
+                display: flex;
+                flex-direction: inherit;
+                align-items: center;
                 img{
-                    width: 100%;
+                    width: 60%;
                 }
             }
             .texto_contenido{
                 padding: 0.4rem;
-                width: 100%;
+                width: 60%;
     
                 h1{
                     color: $primary;
@@ -221,7 +237,11 @@
             .contenedor__text{
                 padding: 0rem;
                 .texto_sobremi{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
                     padding: 0.5rem;
+                    padding-left: 20%;
                     h2{
                         color: $primary;
                         font-weight: 900;   
@@ -238,6 +258,11 @@
             }
             .sobremi_img{
                 width: 100%;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 60%;
+                }
             }   
         }
     
@@ -277,7 +302,15 @@
     
     
         .contenido_carrusel{
-            width: 100%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            gap: 2rem;
+
+            .card{
+                background-color: #232227;
+            }
         }
     
     
@@ -314,7 +347,7 @@
 @include mobile{
     .contenido{
         grid-area: contenido;
-        padding: 0rem;
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -329,13 +362,15 @@
     
             .contenido_img{
                 width: 100%;
+                display: flex;
+                justify-content: center;
                 img{
-                    width: 100%;
+                    width: 60%;
                 }
             }
             .texto_contenido{
                 padding: 0.4rem;
-                width: 100%;
+                width: 80%;
     
                 h1{
                     color: $primary;
@@ -399,8 +434,10 @@
             }
             .sobremi_img{
                 width: 100%;
+                display: flex;
+                justify-content: center;
                 img{
-                    width: 100%;
+                    width: 60%;
                 }
             }
         }
@@ -440,7 +477,15 @@
     
     
         .contenido_carrusel{
-            width: 100%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            gap: 2rem;
+
+            .card{
+                background-color: #232227;
+            }
         }
     
     

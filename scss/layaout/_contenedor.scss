@@ -15,7 +15,7 @@
         "nav"
         "contenido"
         "footer";
-        grid-template-rows: 1fr 5fr 0.5fr;
+        grid-template-rows: 0.4fr 5fr 0.5fr;
     }
 
     @include mobile{
@@ -23,7 +23,7 @@
         "nav"
         "contenido"
         "footer";
-        grid-template-rows: 1fr 5fr 0.5fr;
+        grid-template-rows: 0.4fr 5fr 0.5fr;
     }
 
 
